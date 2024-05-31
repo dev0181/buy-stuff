@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy more stuffs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        .store-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .store-item:hover {
+            background-color: #f0f0f0;
+        }
+        .store-item-info {
+            display: none;
+            padding: 10px;
+            background-color: #fafafa;
+            border-top: 1px solid #ddd;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Buy More Stuffs</h1>
+        <p>da spot wer u buy my stuff</p>
+    </header>
+    <main>
+        <section id="store">
+            <h2>Store</h2>
+            <div class="store-item" onclick="toggleInfo('bracelet1-info')">
+                <h3>cross bracelet</h3>
+                <div id="bracelet1-info" class="store-item-info">
+                    <p>This bracelet lowk fire, cost 5 usd each and u can get black or white</p>
+                </div>
+            </div>
+            <div class="store-item" onclick="toggleInfo('bracelet2-info')">
+                <h3>sm other bracelet</h3>
+                <div id="bracelet2-info" class="store-item-info">
+                    <p>yeah yeah ill make it soon</p>
+                </div>
+            </div>
+            <div class="store-item" onclick="toggleInfo('necklace1-info')">
+                <h3>yip yap</h3>
+                <div id="necklace1-info" class="store-item-info">
+                    <p>This classic necklace is a must-have for any jewelry collection. Its timeless design makes it perfect for everyday wear.</p>
+                </div>
+            </div>
+            <div class="store-item" onclick="toggleInfo('necklace2-info')">
+                <h3>Statement Necklace</h3>
+                <div id="necklace2-info" class="store-item-info">
+                    <p>Make a statement with this bold and beautiful necklace. It's the perfect accessory to elevate any outfit.</p>
+                </div>
+            </div>
+        </section>
+        <section id="what-we-sell">
+            <h2>What We Sell</h2>
+            <p>We specialize in high-quality bracelets and necklaces. Our collection features a variety of styles to suit every taste. Explore our store to find the perfect piece for you!</p>
+        </section>
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <p>See what our customers are saying about our products!</p>
+            <p>"lowk goes hard" - jack jones</p>
+            <p>"dis fire." - me</p>
+            <p>"+10 aura" - Chas midtin</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Buy More Stuffs. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleInfo(infoId) {
+            var infoElement = document.getElementById(infoId);
+            if (infoElement.style.display === 'block') {
+                infoElement.style.display = 'none';
+            } else {
+                infoElement.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
